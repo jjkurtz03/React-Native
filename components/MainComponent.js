@@ -32,8 +32,7 @@ const DirectoryNavigator = createStackNavigator(
                     name='list'
                     type='font-awesome'
                     iconStyle={styles.stackIcon}
-                    onPress={() => navigation.toggleDrawer()}
-                />
+                    onPress={() => navigation.toggleDrawer()}/>
             })
         },
         CampsiteInfo: {screen: CampsiteInfo}
@@ -69,8 +68,7 @@ const HomeNavigator = createStackNavigator(
                 name='home'
                 type='font-awesome'
                 iconStyle={styles.stackIcon}
-                onPress={() => navigation.toggleDrawer()}
-            />
+                onPress={() => navigation.toggleDrawer()}/>
         })
     }
 );
@@ -92,8 +90,7 @@ const AboutNavigator = createStackNavigator(
                 name='info-circle'
                 type='font-awesome'
                 iconStyle={styles.stackIcon}
-                onPress={() => navigation.toggleDrawer()}
-            />
+                onPress={() => navigation.toggleDrawer()}/>
         })
     }
 );
@@ -115,8 +112,7 @@ const ContactNavigator = createStackNavigator(
                 name='address-card'
                 type='font-awesome'
                 iconStyle={styles.stackIcon}
-                onPress={() => navigation.toggleDrawer()}
-            />
+                onPress={() => navigation.toggleDrawer()}/>
         })
     }
 );
@@ -138,8 +134,7 @@ const ReservationNavigator = createStackNavigator(
                 name='tree'
                 type='font-awesome'
                 iconStyle={styles.stackIcon}
-                onPress={() => navigation.toggleDrawer()}
-            />
+                onPress={() => navigation.toggleDrawer()}/>
         })
     }
 );
@@ -148,14 +143,12 @@ const CustomDrawerContentComponent = props => (
     <ScrollView>
         <SafeAreaView
             style={styles.container}
-            forceInset={{top: 'always', horizontal: 'never'}}
-        >
+            forceInset={{top: 'always', horizontal: 'never'}}>
             <View style={styles.drawerHeader}>
                 <View style={{flex: 1}}>
                     <Image
                         source={require('./images/logo.png')}
-                        style={styles.drawerImage}
-                    />
+                        style={styles.drawerImage}/>
                 </View>
                 <View style={{flex: 2}}>
                     <Text style={styles.drawerHeaderText}>NuCamp</Text>
@@ -176,8 +169,7 @@ const MainNavigator = createDrawerNavigator(
                         name='home'
                         type='font-awesome'
                         size={24}
-                        color={tintColor}
-                    />
+                        color={tintColor}/>
                 )
             }
         },
@@ -189,8 +181,7 @@ const MainNavigator = createDrawerNavigator(
                         name='list'
                         type='font-awesome'
                         size={24}
-                        color={tintColor}
-                    />
+                        color={tintColor}/>
                 )
             }
         },
@@ -203,8 +194,7 @@ const MainNavigator = createDrawerNavigator(
                         name='tree'
                         type='font-awesome'
                         size={24}
-                        color={tintColor}
-                    />
+                        color={tintColor}/>
                 )
             }
         },
@@ -217,8 +207,7 @@ const MainNavigator = createDrawerNavigator(
                         name='info-circle'
                         type='font-awesome'
                         size={24}
-                        color={tintColor}
-                    />
+                        color={tintColor}/>
                 )
             }
         },
@@ -231,8 +220,7 @@ const MainNavigator = createDrawerNavigator(
                         name='address-card'
                         type='font-awesome'
                         size={24}
-                        color={tintColor}
-                    />
+                        color={tintColor}/>
                 )
             }
         }

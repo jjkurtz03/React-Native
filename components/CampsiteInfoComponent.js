@@ -37,8 +37,7 @@ function RenderCampsite(props) {
                     raised
                     reverse
                     onPress={() => props.favorite ? 
-                        console.log('Already set as a favorite') : props.markFavorite()}
-                />
+                        console.log('Already set as a favorite') : props.markFavorite()}/>
             </Card>
         );
     }
@@ -62,8 +61,7 @@ function RenderComments({comments}) {
             <FlatList
                 data={comments}
                 renderItem={renderCommentItem}
-                keyExtractor={item => item.id.toString()}
-            />
+                keyExtractor={item => item.id.toString()}/>
         </Card>
     );
 }
