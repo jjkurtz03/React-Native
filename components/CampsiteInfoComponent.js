@@ -67,8 +67,7 @@ function RenderComments({comments}) {
                     style={{
                         alignItems: 'flex-start',
                         paddingVertical: '5%'
-                    }}
-                />
+                    }}/>
                 <Text style={{fontSize: 12}}>{`-- ${item.author}, ${item.date}`}</Text>
             </View>
         );
@@ -147,14 +146,6 @@ class CampsiteInfo extends Component {
                             onFinishRating={rating => this.setState({rating: rating})}
                             style={{paddingVertical: 10}}
                         />
-
-                                            {/* 
-                                            placeholder
-                                            leftIcon
-                                            leftIconContainerStyle
-                                            onChangeText
-                                            value
-                                            */}
                         <Input
                             placeholder='Author'
                             leftIcon={
@@ -171,8 +162,7 @@ class CampsiteInfo extends Component {
                             leftIcon={
                                 <Icon 
                                 name={'comment-o'}
-                                type='font-awesome'/>
-                            }
+                                type='font-awesome'/>}
                             leftIconContainerStyle={{paddingRight: 10}}
                             onChangeText={value => this.setState({text: value})}
                             value={this.state.text}
